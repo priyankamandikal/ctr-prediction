@@ -50,7 +50,7 @@ To implement this algorithm in map-reduce form, we make use of 6 classes:
 5. Split		
 6. Test		
 		
-###Overview:		
+## Overview:		
 		
 The base class C45 calls MapClass which takes input from the data files and generates key value pairs for each line of the input file.		
 This key value pairs are then passed onto the ReduceClass.		
@@ -58,7 +58,7 @@ The ReduceClass then aggregates these key value pairs and then writes  these pai
 These files are read by the GainRatio class which calculates entropy and gain ratio for each attribute.		
 The best gain ratio attribute is then stored into a static variable in the C45 class which keeps a count of the splitted attributes using the Split class.		
 		
-###Details:		
+## Details:		
 		
 **C45**		
 This is the  main class which instantiates and calls the other class objects.		
